@@ -15,11 +15,16 @@
    <link rel="stylesheet" href="css/style.min.css">
    <style>
    
-      .blocks-plan{
-          transition: all 0.5s ease 0s;
-         background: url(img/main/path.png) no-repeat 50% 10%;
-  
+       .blocks-plan {
+         background: transparent;
+         transition: all 0.5s ease 0s;
+         opacity: 0;
       }
+      .blocks-plan._active{
+       background: url(img/main/path.png) no-repeat 50% 10%;
+          opacity: 1;
+      }
+      
       @media (max-width: 1100px) {
          .blocks-plan {
             background-size: 65%;
@@ -216,7 +221,7 @@
                         you`re done.
                      </div>
                   </div>
-                  <div class="plan__item blocks-plan _anim-items" style="background: url(img/main/path.png) no-repeat 50% 10%;">
+                  <div class="plan__item blocks-plan _anim-items" >
                      <div class="blocks-plan__body _anim-items">
                         <div class="blocks-plan__column _anim-items">
                            <div class="blocks-plan__item">
