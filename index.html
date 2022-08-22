@@ -450,7 +450,7 @@
    <script>
       function smoothScroll(target, duration) {
       var target = document.querySelector(target);
-      var targetPosition = target.getBoundingClientRect().top;
+      var targetPosition = target.getBoundingClientRect().bottom;
       var startPosition = window.pageYOffset;
       var distance = targetPosition - startPosition;
       var startTime = null;
